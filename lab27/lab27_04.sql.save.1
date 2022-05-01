@@ -1,0 +1,6 @@
+CREATE FUNCTION data_insert_func() RETURNS TRIGGER LANGUAGE plpgsql AS
+$$
+	BEGIN
+		IF(NEW.datetime >= '2021-11-01' AND NEW.datetime < '2021-12-01') THEN
+		INSERT INTO
+$$;
